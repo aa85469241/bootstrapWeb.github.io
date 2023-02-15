@@ -1,0 +1,70 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html * {
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav .nav-item .nav-link {
+    color: white;
+}
+
+.nav .nav-item .nav-link.active {
+    border: 2px solid white;
+}
+
+#form-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#btn-text {
+    letter-spacing: 3px;
+}
+
+#form-cross {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 1;
+    background-color: firebrick;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.custom-input {
+    height: 30px;
+    padding: 10px;
+}
+
+#thead th {
+    color: white;
+}
+
+#thead th:not(:last-child) {
+    cursor: pointer;
+}
+
+#tbody td {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+#eye-icon {
+    width: 25px;
+    margin: 5px;
+}
+
+.tableRow-select {
+    transform: scale(2);
+    width: 100%;
+    height: 100%;
+}
+
+button:disabled .counter {
+    display: none;
+}

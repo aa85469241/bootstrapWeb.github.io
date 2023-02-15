@@ -1,0 +1,17 @@
+{
+    "name": "bootstrapWeb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "dependencies": {},
+    "devDependencies": {
+        "json-server": "^0.17.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "json-server": "json-server --watch db.json"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
