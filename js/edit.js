@@ -50,7 +50,7 @@ stateChangeBtn.addEventListener('click', function (e) {
     })
 
     setTimeout(() => {
-        window.location.replace('./tos.html')
+        window.location.replace('./todoList.html')
         process.on('warning', e => console.log(e.stack))
     }, 1000)
 })
@@ -68,7 +68,7 @@ delBtn.addEventListener('click', function (e) {
         })
     })
 
-    window.location.replace("./tos.html")
+    window.location.replace("./todoList.html")
 })
 
 function selectRow() {

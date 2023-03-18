@@ -22,7 +22,7 @@ const createNewData = async (e) => {
         headers: { 'Content-Type': 'application/json' }
     })
 
-    window.location.replace('./tos.html')
+    window.location.replace('./todoList.html')
 }
 
 form.addEventListener("submit", createNewData)

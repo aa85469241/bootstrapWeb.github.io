@@ -1,4 +1,5 @@
 const container = document.getElementById("tbody")
+const loading = document.getElementById("loading-section")
 const tableHeads = document.querySelectorAll("thead th:not([data-column='selector'])")
 const sortIcons = document.querySelectorAll("th i")
 
@@ -7,6 +8,7 @@ const rendering = async (value = "id", order = "asc") => {
     const uri = `https://fake-server-b5mz.onrender.com/madhead?_sort=${value}&_order=${order}`;
 
     try {
+
         const res = await fetch(uri);
         const data = await res.json();
 
@@ -24,6 +26,7 @@ const rendering = async (value = "id", order = "asc") => {
             </tr>
         `
         });
+        console.log("loading finished")
     }
     catch (err) {
         return console.log(err)
@@ -42,6 +45,7 @@ const rendering = async (value = "id", order = "asc") => {
         }
     })
 
+    loading.classList.add("d-none");
     container.innerHTML = template;
 }
 
