@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- font family -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap"
+            rel="stylesheet"
+        />
+        <!-- style -->
+        <link rel="stylesheet" href="../styles.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <!-- bootstrap icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+        <title>working on</title>
+    </head>
+    <body>
+        <!-- <div class="vw-100 vh-100 bg-black position-absolute top-0 start-0">
+            <img
+                src="../image/warning-strip.png"
+                alt="warning-strip"
+                id="warning-strip"
+                class="position-fixed top-0 start-0"
+            />
+            <img
+                src="../image/warning-strip.png"
+                alt="warning-strip"
+                id="warning-strip"
+                class="position-fixed bottom-0 start-0"
+            />
+        </div> -->
+        <nav class="navbar navbar-expand-lg p-3">
+            <div class="container-fluid">
+                <a
+                    href="../index.html"
+                    class="navbar-brand text-dark letter-spacing-10"
+                    >Recoding</a
+                >
+            </div>
+        </nav>
+        <main id="main">
+            <div class="h-100 w-100">
+                <div
+                    id="warning-window"
+                    class="position-absolute rounded overflow-hidden shadow"
+                >
+                    <div id="window-topline" class="bg-dark py-1">
+                        <div
+                            id="window-operation-buttons"
+                            class="h-100 hstack gap-2 ps-4"
+                        >
+                            <div class="bg-danger dot"></div>
+                            <div class="bg-warning dot"></div>
+                            <div class="bg-success dot"></div>
+                        </div>
+                    </div>
+                    <div id="window-body" class="bg-light">
+                        <section
+                            class="text-center h-100 d-flex justify-content-center align-items-center position-relative"
+                            id="site-section"
+                        >
+                            <div
+                                id="loading-step"
+                                class="text-uppercase text-dark-emphasis position-absolute w-100 h-100 d-flex flex-columns align-items-center justify-content-center"
+                            >
+                                <div>
+                                    <div class="overflow-hidden d-inline-flex">
+                                        <span
+                                            class="error-text"
+                                            style="--delay: 1s"
+                                            >oops!</span
+                                        >
+                                    </div>
+                                    <div class="overflow-hidden d-inline-flex">
+                                        <span
+                                            class="error-text text-danger-emphasis fw-bold"
+                                            style="--delay: 2s"
+                                            >error</span
+                                        >
+                                    </div>
+                                    <div class="overflow-hidden d-inline-flex">
+                                        <span
+                                            class="error-text"
+                                            style="--delay: 2s"
+                                            >occur.</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="progress-container w-100 position-absolute bottom-0"
+                                >
+                                    <h3
+                                        class="progress-label text-capitalize text-dark-emphasis text-end pe-3"
+                                    >
+                                        processing
+                                    </h3>
+                                    <div
+                                        class="progress rounded-0"
+                                        role="progressbar"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                    >
+                                        <div
+                                            class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row hstack justify-content-center">
+                                <div
+                                    class="col-3 overflow-y-hidden overflow-x-visible d-inline-flex"
+                                >
+                                    <img
+                                        src="../image/traffic_cone.png"
+                                        class="site-section-img w-100"
+                                    />
+                                </div>
+                                <div
+                                    class="col-lg-6 col-9 row d-inline-flex overflow-hidden"
+                                >
+                                    <span class="site-section-text text-dark">
+                                        This web page is still under
+                                        construction.
+                                        <br />
+                                        <a
+                                            href="../index.html"
+                                            class="site-section-return-button text-nowrap mt-3 text-dark text-decoration-none"
+                                            >-- leave here --</a
+                                        >
+                                    </span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div
+                    id="error-messages-wrapper"
+                    class="h-100 w-100 position-relative"
+                >
+                    <div
+                        id="error-message-cleaner"
+                        class="rounded-circle bg-light border d-flex align-items-center justify-content-center p-2 overflow-hidden shadow visually-hidden"
+                        tabindex="0"
+                        type="button"
+                        data-bs-toggle="popover"
+                        data-bs-trigger="hover"
+                        data-bs-content="Clean all error messages"
+                    >
+                        <i class="bi bi-wrench-adjustable fs-4 text-light"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <h6>@made by bootstrap.</h6>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../js/toastDisplay.js"></script>
+
+        <script>
+            // popover
+            const popoverEl = document.getElementById("error-message-cleaner");
+            const popover = new bootstrap.Popover(popoverEl, {
+                animation: true,
+            });
+
+            popoverEl.onclick = function (e) {
+                e.preventDefault();
+                const errorMassages = document.querySelectorAll(".toast");
+
+                errorMassages.forEach((errorMessage) => {
+                    const toast = new bootstrap.Toast(errorMessage);
+                    const randomTimer = Math.random() * 1500;
+
+                    setTimeout(() => {
+                        toast.hide();
+                    }, randomTimer);
+                });
+                popoverEl.removeAttribute("data-bs-content")
+            };
+
+
+            // warning window progress
+            const progress = document.querySelector(".progress-container");
+            const progressbar = document.querySelector(".progress-bar");
+            const bannerTexts = document.querySelectorAll(".error-text");
+
+            progressbar.addEventListener("animationend", () => {
+                progress.classList.add("opacity-0");
+
+                setTimeout(() => {
+                    bannerTexts.forEach((bannerText) => {
+                        bannerText.setAttribute(
+                            "data-text-animation",
+                            "showing"
+                        );
+                    });
+                }, 500);
+
+                bannerTexts[2].addEventListener(
+                    "animationend",
+                    () => {
+                        ToastsDisplay();
+                    },
+                    { once: true }
+                );
+            });
+        </script>
+    </body>
+</html>
